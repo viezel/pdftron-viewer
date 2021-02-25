@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <script src="./lib/webviewer.min.js"></script>
+    <title>PDFTron Viewer</title>
+</head>
+<style>
+    html,body {
+        margin:0;
+        padding: 0;
+    }
+    #viewer {
+        width: 100%;
+        height: 100vh;
+    }
+</style>
+<body>
+    <div id="viewer"></div>
+    <script>
+        WebViewer({
+            path: './lib',
+            initialDoc: './demo.pdf',
+            fullAPI: true
+        }, document.getElementById('viewer'));
+    </script>
+</body>
+</html>
